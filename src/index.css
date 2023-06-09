@@ -7,9 +7,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #efeaea6b;
+  border-radius: 8px;
+  padding: 20px 40px;
+  min-height: 310px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+ width: 100%;
+}
+
+.feedback-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.feedback-list li {
+  display: inline-block;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.statistics-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.statistics-list li {
+  margin-bottom: 8px;
+}
+
+.statistics-list li:last-child {
+  margin-bottom: 0;
+}
+
+.no-feedback {
+  font-style: italic;
+  color: #888;
 }
